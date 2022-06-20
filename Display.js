@@ -6,6 +6,12 @@ class Display{
         this.tipoOperacion = undefined;
         this.valorActual = '';
         this.valorAnterior = '';
+        this.signos = {
+            sumar:'+',
+            dividir: '/',
+            multiplicar: 'x',
+            restar: '-',
+        }
     }
 
     borrar(){
@@ -20,6 +26,14 @@ class Display{
         this.imprimirValores();
     }
 
+    computar(tipo){
+        this.tipoOperacion !== 'igual' && this.calcular();
+        this.tipoOperacion = tipo;
+        this.valorAnterior = this.valorActual || this.valorAnterior;
+        this.valorActual = '';
+        this.imprimirValores();
+    }
+
     agregarNumero(numero) {
         if(numero === '.' && this.valorActual.includes('.')) return 
         this.valorActual = this.valorActual.toString() + numero.toString();
@@ -29,7 +43,7 @@ class Display{
 
     imprimirValores(){
         this.displayValorActual.textContent = this.valorActual;
-        this.displayValorAnterior.textContent = this.valorAnterior;
+        this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ''}`;
     }
 
     calcular(){

@@ -5,7 +5,7 @@
 
 body{
     margin: 0;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);;
+    background-image: linear-gradient(to top, #cfd9df 0%, #93989a 100%);
 }
 
 .container{
@@ -19,7 +19,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4,75px);
     grid-template-rows: 160px repeat(5, 75px);
-    background-color: #7e73d0;
+    background-color: #4f4f55;
     padding: 15px;
     border-radius: 32px;
     box-shadow: 15px 10px 0px 5px #00000070;
@@ -32,12 +32,12 @@ button{
     border-radius: 32px;
     font-size: 1.5em;
     border: none;
-    background-color: #7e73d0;
-    box-shadow: 5px 5px 10px -3px #00000041, -5px -5px 15px 3px #00ffbf1e;
+    background-color: #8b8b90a9;
+    box-shadow: 5px 5px 10px -3px #00000041, -5px -5px 15px 3px #dce9e60d;
 }
 
 button:active{
-    background-color: #5a51a3;
+    background-color: #69696b;
 }
 
 button:focus{
@@ -51,7 +51,7 @@ button:focus{
     margin: 10px 10px 20px;
     flex-direction: column;
     align-items: flex-end;
-    background-color: #363636;
+    background-color: #44533b;
     border-radius: 32px;
     text-align: right;
     justify-content: space-between;

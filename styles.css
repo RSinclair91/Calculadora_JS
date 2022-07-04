@@ -8,6 +8,28 @@ body{
     background-image: linear-gradient(to top, #cfd9df 0%, #93989a 100%);
 }
 
+footer{
+    background-color: #44533b;
+    display: flex;
+    padding: 10;
+    margin: 10;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
+header{
+    background-color: #44533b;
+    display: flex;
+    padding: 10;
+    margin: 10;
+    flex-direction: column;
+    align-items: center ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -15,15 +37,7 @@ body{
     height: 100vh;
 }
 
-.calculadora{
-    display: grid;
-    grid-template-columns: repeat(4,75px);
-    grid-template-rows: 160px repeat(5, 75px);
-    background-color: #4f4f55;
-    padding: 15px;
-    border-radius: 32px;
-    box-shadow: 15px 10px 0px 5px #00000070;
-}
+/*Botones*/
 
 button{
     cursor: pointer;
@@ -44,6 +58,29 @@ button:focus{
     outline: none;
 }
 
+.col-2{
+    grid-column: span 2;
+}
+
+.row-2{
+    grid-row: span 3;
+    
+}
+
+/*Calculadora*/
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #4f4f55;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000070;
+}
+
+/*Display*/
+
 .display{
     grid-column: 1 / -1;
     padding: 16px;
@@ -57,10 +94,6 @@ button:focus{
     justify-content: space-between;
     word-break: break-all;
     box-shadow: 0px 0px 0px 10px #00000033;
-}
-
-.col-2{
-    grid-column: span 2;
 }
 
 #valorActual{

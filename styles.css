@@ -103,3 +103,25 @@ button:focus{
 #valorAnterior{
     font-size: 2em;
 }
+
+/*Datos de usuario - Local storage*/
+
+.form-label{
+    border-radius: 5%;
+    background-color: #4f4f5576;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.form-control{
+    font-size: 15px;
+    color: #000000;
+}
+
+.btn{
+    border-radius: 5%;
+    font-size: 35px;
+    color: #ffffff;
+    background-color: #4f4f55;
+}
+
